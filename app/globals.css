@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: oklch(67.05% 0.189 44.87);
+    /* --color-black: oklch(25.20% 0.000 0); */
+    --color-black: oklch(37.19% 0.066 219.60);
+    --color-background-dark: oklch(0.1608 0.0392 288.44);
+    --color-background-light: oklch(0.2617 0.0335 286.38);
+    /* #232234 */
+}
+
+@font-face {
+    font-family: 'Havelock';
+    src: url('./../public/fonts/Havelock-Titling-Medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    background: #232234;
+}
+
+body {
+    color: #fff;
+}
+
+.font-havelock {
+    font-family: 'Havelock', sans-serif !important;
+}
+
+/* Add this to your global CSS file */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Edge */
+}
+
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+    scrollbar-width: none;
+    /* For Firefox */
+}
+
+@keyframes pipe {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(500%);
+  }
+}
+.animate-pipe {
+  animation: pipe 3s linear infinite;
+}
