@@ -1,6 +1,7 @@
 import { XIcon } from "lucide-react"
 import { useState, useRef, useEffect } from "react"
 import TelegramAppIcon from "./telegram-app-icon"
+import Image from "next/image"
 
 export default function AboutUsFolder() {
     const [open, setOpen] = useState(false)
@@ -54,7 +55,7 @@ export default function AboutUsFolder() {
                 onClick={() => setOpen(!open)}
                 className={`p-2 rounded hover:bg-background-light text-sm text-center flex flex-col items-center gap-2 w-[100px] cursor-pointer select-none`}
             >
-                <img src={"/folder.png"} width={50} height={50} loading="lazy" />
+                <Image alt="" src={"/folder.png"} width={50} height={50} loading="lazy" />
                 Men haqimda
             </div>
 

@@ -1,5 +1,7 @@
 import { XIcon } from "lucide-react"
 import { useState, useRef, useEffect } from "react"
+import Image from "next/image"
+
 
 interface IDesktopIconFrame {
     font?: "font-havelock" | "",
@@ -60,7 +62,7 @@ export default function DesktopIconFrame({ font = "", title, image, url }: IDesk
                 onClick={() => setOpen(!open)}
                 className={`p-2 rounded hover:bg-background-light text-sm text-center flex flex-col items-center gap-2 w-[100px] cursor-pointer select-none ${font}`}
             >
-                <img src={image} width={50} height={50} loading="lazy" />
+                <Image alt="" src={image} width={50} height={50} loading="lazy" />
                 {title}
             </div>
 
