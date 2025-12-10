@@ -69,7 +69,7 @@ export default function DesktopIconFrame({ font = "", title, image, url }: IDesk
             {open && (
                 <div
                     style={{ top: pos.y, left: pos.x }}
-                    className="absolute w-full max-w-7xl aspect-[4/3] bg-background-dark"
+                    className="absolute w-full max-w-7xl aspect-[3/4] lg:aspect-[4/3] bg-background-dark"
                     onMouseMove={onMouseMove}
                     onMouseUp={onMouseUp}
                 >
