@@ -59,7 +59,7 @@ export default function DesktopIconFrame({ font = "", title, image, url }: IDesk
     return (
         <>
             <div
-                onClick={() => setOpen(!open)}
+                onDoubleClick={() => setOpen(!open)}
                 className={`p-2 rounded hover:bg-background-light text-sm text-center flex flex-col items-center gap-2 w-[100px] cursor-pointer select-none ${font}`}
             >
                 <Image alt="" src={image} width={50} height={50} loading="lazy" />

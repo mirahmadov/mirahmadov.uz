@@ -52,7 +52,7 @@ export default function TelegramAppFolder() {
     return (
         <>
             <div
-                onClick={() => setOpen(!open)}
+                onDoubleClick={() => setOpen(!open)}
                 className={`p-2 rounded hover:bg-background-light text-sm text-center flex flex-col items-center gap-2 w-[100px] cursor-pointer select-none`}
             >
                 <Image alt="" src={"/folder.png"} width={50} height={50} loading="lazy" />
